@@ -21,3 +21,130 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 <script src="js/main.js"></script>
 </body>
 </html>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand text-dark" href="#">AfriTalent</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="freelances.html">Freelances</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="tarifs.html">Tarifs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="about.html">À propos</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main class="pt-5">
+    <div class="container my-5">
+    <div class="row g-5">
+        <div class="col-lg-7">
+            <div class="card shadow-sm p-4">
+                <h2 class="mb-4">Envoyez-nous un message</h2>
+                <div id="successAlert" class="alert alert-success d-none mb-4" role="alert">
+                    <h4 class="alert-heading">Félicitations !</h4>
+                    <p class="mb-0">Votre message a été validé avec succès. Merci de nous avoir contactés !</p>
+                </div>
+                <form id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                            <div class="error-message">Le prénom est requis.</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                            <div class="error-message">Le nom est requis.</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Adresse Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="error-message">Veuillez entrer une adresse email valide.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Sujet</label>
+                        <select class="form-select" id="subject" required>
+                            <option value="" selected disabled>Choisissez un sujet...</option>
+                            <option value="support">Support Technique</option>
+                            <option value="sales">Service Commercial</option>
+                            <option value="other">Autre Demande</option>
+                        </select>
+                        <div class="error-message">Veuillez sélectionner un sujet.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                        <div class="error-message">Le message doit contenir au moins 20 caractères.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="card shadow-sm p-4 mb-4">
+                <h3 class="h4 mb-4">Nos Coordonnées</h3>
+                <p class="mb-2"><strong>Adresse :</strong> Dakar Rue TOLBIAC Angle 26</p>
+                <p class="mb-2"><strong>Téléphone :</strong>76 540 843 ou 334567890</p>
+                <p class="mb-0"><strong>Email :</strong> contact@entreprise-fictive.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-info text-white pt-5 pb-3 shadow-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <img src="" alt="logo AF" class="mb-2">
+            <h5>AfriTalent</h5>
+            <p class="text-muted text-white">la technologie n'est pas une fin en soi,mais un levier strategique</p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h4>les liens</h4>
+            <ul class="list-unstyled">
+              <li><a href="" class="text-decoration-none">Accueil</a></li>
+              <li><a href="" class="text-decoration-none">a propos</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h4>ressources</h4>
+            <ul class="list-unstyled">
+              <li><a href="" class="text-decoration-none">blog</a></li>
+              <li><a href="" class="text-decoration-none">documentation</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h4>Contact</h4>
+            <p class="text-muted text-white"><a href="">Email:afritalent@gmail.com</a></p>
+            <div class="d-flex gap-3">
+              <a href=""><i class="text-white"></i>whatsapp</a>
+              <a href=""><i class="text-white"></i>instagram</a>
+              <a href=""><i class="text-white"></i>facebook</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="text-center">
+          <p class="mb-0"><span id="year"></span>reservation</p>
+        </div>
+      </div>
+    </footer>
+</main>

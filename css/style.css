@@ -1,0 +1,10 @@
+/* style contact */
+.error-message {
+            font-size: 0.875em;
+            color: #dc3545;
+            display: none;
+            margin-top: 0.25rem;
+        }
+        .is-invalid ~ .error-message {
+            display: block;
+        }
