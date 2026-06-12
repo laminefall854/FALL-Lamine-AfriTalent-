@@ -1,10 +1,48 @@
-/* style contact */
-.error-message {
-            font-size: 0.875em;
-            color: #dc3545;
-            display: none;
-            margin-top: 0.25rem;
-        }
-        .is-invalid ~ .error-message {
-            display: block;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+html,body {
+    height: 100;
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(47, 7, 190);
+    overflow-x: hidden;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 43, 70);
+}
+.navbar{
+    background-color: aliceblue;
+    padding: 0;
+    transition: all 0.3s ease;
+letter-spacing: 0.5px;
+}
+:root{
+    --brand-primary: #0ea5e9;
+    --brand-secondary: #0f172a;
+    --brand-light: #f8fafc;
+    --brand-success: #10b981;
+    --brand-danger: #ef4444;
+    --font-headings: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --space-sm:0.5rem;
+    --space-md:1rem;
+    --space-lg:2rem;
+    --border-radius: 8px;
+    --transition-smooth: all 0.3s ease-in-out ;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+            .navbar-menu {
+                gap: var(--space-md);
+            }
         }
