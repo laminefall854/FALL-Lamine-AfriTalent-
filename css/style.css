@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6{
     color: rgb(10, 43, 70);
 }
 .navbar{
-    background-color: aliceblue;
+    background-color: white;
     padding: 0;
     transition: all 0.3s ease;
 letter-spacing: 0.5px;
@@ -46,3 +46,182 @@ html{
                 gap: var(--space-md);
             }
         }
+body{
+    padding-top: 5px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #21259;
+    ovrerflow-x: hidden;
+}
+h1,h2,h3{
+    font font-weight: 300;
+    letter-spacing: =0.1em
+}
+.bi-star-fill{
+    color: #ffc107;
+}
+.hero{
+    padding: 80px 0;
+    
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffffff 60%, #e3f2fd 100%);
+  overflow: hidden;
+  padding: 100px 0; 
+}
+
+.hero-title {
+  font-size: clamp(2.8rem, 6.5vw, 5rem); 
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 25px;
+  background: linear-gradient(45deg, #0f172a, #0dcaf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 500;
+  color: #475569; 
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-buttons .btn {
+  padding: 15px 35px ;
+  font-size: 1.15rem ;
+  border-radius: 12px;
+}
+
+@media (min-width: 992px) {
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    text-align: left;
+  }
+
+  .hero-content {
+    flex: 1.1; 
+  }
+
+  .hero-image-container {
+    flex: 0.9;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-img {
+    border-radius: 32px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    transform: rotate(3deg) translateY(-10px);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100% !important; 
+    max-height: 600px; 
+    object-fit: cover;
+  }
+
+  .hero-img:hover {
+    transform: rotate(0deg) scale(1.04); 
+  }
+}
+@media (max-width: 991px) {
+  .hero-container {
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: column; 
+  }
+  .hero-img {
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+  }
+}
+
+.hero h1{
+    font-size: larger;
+    background: #87a1dc;
+}
+.bento-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px 0;
+}
+.bento-item {;
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  flex-column: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bento-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  
+  
+  .bento-item:nth-child(1) {
+    grid-column: span 2; 
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  }
+  
+  .bento-item:nth-child(2) {
+    background-color: #ffffff;
+    grid-column: span 1;
+  }
+  
+  .bento-item:nth-child(3) {
+    background-color: white;
+    grid-column: span 3; 
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+  }
+  
+  .bento-item:nth-child(3) .bento-text-block {
+    flex: 2;
+  }
+  
+  .bento-item:nth-child(3) .bento-img-block {
+    flex: 1;
+  }
+}
+.service-card {
+  transition: transform 0.4s (0.165, 0.84, 0.44, 1), 
+              box-shadow 0.4s r(0.165, 0.84, 0.44, 1), 
+              border-color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08) ;
+  border-radius: 50px ;
+  overflow: hidden;
+}
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02); 
+  box-shadow: 0 20px 40px rgba(13, 202, 240, 0.15) 
+  border-color: #0dcaf0; 
+}
+.row .col .service-card {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              border-color 0.3s ease !important;
+  cursor: pointer;
+}
+.row .col .service-card:hover {
+  transform: translateY(-8px) scale(1.02) 
+  box-shadow: 0 20px 30px rgba(13, 202, 240, 0.25) 
+  border-color: #0dcaf0 
+}
+   
