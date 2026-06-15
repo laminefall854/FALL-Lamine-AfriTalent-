@@ -50,11 +50,24 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         <li class="nav-item">
           <a class="nav-link text-dark" href="contact.html">Contact</a>
         </li>
+        
+        <li class="nav-item mx-2">
+            <button class="btn btn-link text-dark p-2 text-decoration-none" id="themeToggle" aria-label="Changer de thème">
+              <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </li>
+
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-dark rounded-pill shadow-sm px-3" href="#rejoindre">Rejoindre AfriTalent</a>
+        </li>
+
+
+
       </ul>
     </div>
   </div>
 </nav>
-<p><a type="button" class="btn btn-secondary pt-5" href="#rejoindre">Rejoindre AfriTalent</a></p>
+
 <main>
     <section class="hero py-5">
           <div class="container hero-container">
@@ -158,7 +171,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
       </div>
     </section>
     <h1 class="text-center">TÉMOIGNAGES</h1>
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="testimonialCarousel" class="carousel slide shadow-sm rounded bg-light p-4 p-md-5" data-bs-ride="carousel" >
       <div class="carousel-inner">
         <div class="carousel-item active text-center">
           <img src="image/demba ka.jpg" class="w-25 rounded-circle" alt="" >
@@ -268,5 +281,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
       </div>
     </footer>
 </main>
+<button type="button" class="btn btn-info text-dark rounded-circle shadow position-fixed bottom-0 end-0 m-4 d-none" id="btnBackToTop" style="z-index: 1030; width: 50px; height: 50px;">
+  <i class="bi bi-arrow-up"></i>
+</button>
 </body>
 </html>

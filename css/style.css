@@ -65,7 +65,7 @@ h1,h2,h3{
 }
 
 .hero {
-  background: linear-gradient(135deg, #ffffff 60%, #e3f2fd 100%);
+  background: linear-gradient(135deg, #ffffff 60%, #1b1e20 100%);
   overflow: hidden;
   padding: 100px 0; 
 }
