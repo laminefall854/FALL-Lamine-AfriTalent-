@@ -47,6 +47,15 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         <li class="nav-item">
           <a class="nav-link text-dark" href="contact.html">Contact</a>
         </li>
+        <li class="nav-item mx-2">
+            <button class="btn btn-link text-dark p-2 text-decoration-none" id="themeToggle" aria-label="Changer de thème">
+              <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </li>
+
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-dark rounded-pill shadow-sm px-3" href="#rejoindre">Rejoindre AfriTalent</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -64,7 +73,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <div class="col-md-6"><img class=" rounded shadow-sm w-50 " src="image/reuinion.jpg"  alt="Réunion de l'équipe"></div>
         </div>
     </section>
-    <section id="equipe">
+    <section id="equipe fade-in-section">
         <h2 class="titre text-center mb-5">Equipe</h2>
         <div class="team-grid">
             <div class="card h-100 text-center border-0 shadow-sm p-4">
@@ -138,18 +147,20 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     </section>
     <section id="chiffre">
         <h2 class="text-center mb-5 position-relative pb-3 ">Chiffres Clés</h2>
+        
         <div class="bento-grid">
-            <div class="bento-item large card border-0 bg-primary text-white p-4 d-flex flex-column justify-content-center shadow-sm">
-                <div class="counter-number text-primary" data-target="98">0</div>
-                <div class="counter-label">clients Satisfait</div>
+            <div class="bento-item card border-0 bg-white p-4 d-flex flex-column justify-content-center shadow-sm">
+              <div class="counter-label">clients Satisfait</div>
+              <p class="fs-1 fw-bold mb-1 stat-counter" data-target="98">0</p>
             </div>
-            <div div class="bento-item card border-0 bg-white p-4 d-flex flex-column justify-content-center shadow-sm">
-                <div class="counter-number" data-target="150">0</div>
-                <div class="counter-label">fin de projets</div>
+            <div class="bento-item card border-0 bg-white p-4 d-flex flex-column justify-content-center shadow-sm">
+              <div class="counter-label">fin de projets</div>
+              <p class="fs-1 fw-bold mb-1 stat-counter" data-target="150">0</p>
             </div>
             <div class="bento-item tall card border-0 p-4 d-flex flex-column justify-content-center shadow-sm" style="background-color: #eff6ff;">
-                <div class="counter-number" data-target="10" style="color: blue;">0</div>
-                <div class="text-uppercase fw-semibold text-muted tracking-wider small">Prix Gagnés</div>
+              <div class="text-uppercase fw-semibold text-muted tracking-wider small">Prix Gagnés</div>
+              <p class="fs-1 fw-bold mb-1 stat-counter" data-target="25">0</p>
+            </div>
         </div>
     </section>
         <footer class="bg-info text-white pt-5 pb-3 shadow-lg">
@@ -191,5 +202,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
       </div>
     </footer>
     </section>
+    <button type="button" class="btn btn-info text-dark rounded-circle shadow position-fixed bottom-0 end-0 m-4 d-none" id="btnBackToTop" style="z-index: 1030; width: 50px; height: 50px;">
+      <i class="bi bi-arrow-up-short fs-4"></i>
+    </button>
 </body>
 </html>

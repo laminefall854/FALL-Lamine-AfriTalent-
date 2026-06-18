@@ -26,10 +26,10 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top shadow-sm ">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top shadow-sm custom-navbar ">
   <div class="container-fluid">
     <a class="navbar-brand text-dark" href="#">AfriTalent</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarMenu">
@@ -82,16 +82,25 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <div><img src="image/acceuil.jpg" class="w-100" alt=""></div>
           </div>
     </section>
-    <section class="container py-5 text-center">
+    <section class="container py-5 text-center fade-in-section">
       <h1>STATISTIQUE</h1>
         <div class="row">
-          <div class="col-md-4"><p><h3 class="border bg-light">freelances inscrits</h3>167</p></div>
-          <div class="col-md-4"><p><h3 class="border bg-light">entreprises Partenarias</h3>47</p></div>
-          <div class="col-md-4"><p><h3 class="border bg-light">missions réalisées</h3>123</p></div>
+          <div class="col-md-4">
+            <h3 class="border bg-light">freelances inscrits</h3>
+            <p class="fs-2 fw-bold m-0 text-info stat-counter" data-target="167">0</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="border bg-light">entreprises Partenarias</h3>
+            <p class="fs-2 fw-bold m-0 text-info stat-counter" data-target="47">0</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="border bg-light">missions réalisées</h3>
+            <p class="fs-2 fw-bold m-0 text-info stat-counter" data-target="123">0</p>
+          </div>
         </div>
     </section>
     </section>
-    <section class="container py-5 text-center">
+    <section class="container py-5 text-center fade-in-section">
       <div class="container">
         <h1>COMMENT ÇA MARCHE</h1>
       <p>Découvrez notre processus en detaille</p>
@@ -123,7 +132,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         </div>
       </div>
     </section>
-    <section class="container text-center">
+    <section class="container text-center fade-in-section">
       <h1> CATÉGORIES DE SERVICES</h1>
       <div class="row row-cols-3 g-3">
         <div class="col">
@@ -282,7 +291,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     </footer>
 </main>
 <button type="button" class="btn btn-info text-dark rounded-circle shadow position-fixed bottom-0 end-0 m-4 d-none" id="btnBackToTop" style="z-index: 1030; width: 50px; height: 50px;">
-  <i class="bi bi-arrow-up"></i>
+  <i class="bi bi-arrow-up-short fs-4"></i>
 </button>
 </body>
 </html>
