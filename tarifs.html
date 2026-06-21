@@ -21,13 +21,16 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 <script src="js/main.js"></script>
 <link rel="stylesheet" 
    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+<!-- BARRE DE NAVIGATION PRINCIPALE (Navbar fixée au sommet) -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top shadow-sm">
   <div class="container-fluid">
+    <!-- Identité de la marque -->
     <a class="navbar-brand text-dark" href="#">AfriTalent</a>
+    <!-- Bouton burger : synchronisé sur l'identifiant global #navbarMenu pour éviter les bugs -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- Bloc des liens de navigation -->
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -46,12 +49,13 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         <li class="nav-item">
           <a class="nav-link text-dark" href="contact.html">Contact</a>
         </li>
+        <!-- Interrupteur du mode sombre -->
         <li class="nav-item mx-2">
             <button class="btn btn-link text-dark p-2 text-decoration-none" id="themeToggle" aria-label="Changer de thème">
               <i class="bi bi-moon-fill" id="themeIcon"></i>
           </button>
         </li>
-
+        <!-- Bouton d'appel à l'action (CTA) d'inscription -->
         <li class="nav-item ms-lg-2">
           <a class="btn btn-dark rounded-pill shadow-sm px-3" href="#rejoindre">Rejoindre AfriTalent</a>
         </li>
@@ -60,14 +64,16 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
   </div>
 </nav>
 
-      
+<!-- SECTION 1 : HISTOIRE ET VISION (Déclenchement du fondu au scroll) -->
 <section class="bg-light py-5">
+  <!-- En-tête textuel introduisant la section des abonnements -->
   <div class="">
     <div class="text-center mb-5">
           <h1 class="display-5 fw-bold">Nos Plans Tarifaires</h1>
            <p class="text-muted fs-5">Choisissez la formule idéale pour propulser votre activité.</p>
       </div>
       <div class="row g-4 align-items-center mb-5 pt-3">
+          <!-- PLAN 1 : OFFRE GRATUITE -->
           <div class="col-lg-4">
               <div class="card h-100 shadow-sm border-0 rounded-4">
                   <div class="card-body p-4 d-flex flex-column">
@@ -90,6 +96,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
                   </div>
               </div>
           </div>
+          <!-- PLAN 2 : OFFRE PRO -->
           <div class="col-lg-4">
               <div class="card card-premium h-100 shadow-lg border border-primary border-2 rounded-4 position-relative">
                   <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2 text-uppercase fs-7 shadow">Populaire</span>
@@ -113,6 +120,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
                   </div>
               </div>
           </div>
+          <!-- PLAN 3 : OFFRE ENTREPRISE -->
           <div class="col-lg-4">
               <div class="card h-100 shadow-sm border-0 rounded-4">
                   <div class="card-body p-4 d-flex flex-column">
@@ -136,57 +144,70 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
               </div>
           </div>
       </div>
+      <!-- Ligne de séparation graphique horizontale avec marge verticale -->
       <hr class="my-5 opacity-25">
+      <!-- Conteneur centré (mx-auto) -->
       <div class="mx-auto" style="max-width: 800px;">
+        <!-- En-tête de la section FAQ avec titre centré et texte d'explication gris  -->
           <div class="text-center mb-4">
               <h2 class="fw-bold">Questions Fréquentes</h2>
               <p class="text-muted">Tout ce que vous devez savoir sur nos offres et notre plateforme.</p>
             </div>
           <div class="accordion accordion-flush bg-white rounded-4 shadow-sm p-2" id="faqAccordion">
+            <!-- BLOC QUESTION 1 -->
               <div class="accordion-item border-0 mb-2">
                   <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button collapsed fw-semibold rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                           Puis-je changer de plan tarifaire à tout moment ?
                       </button>
                   </h2>
+                  <!-- Panneau de réponse de la question 1 -->
                   <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                       <div class="accordion-body text-muted">
                           Oui, absolument. Vous pouvez faire évoluer votre abonnement à la hausse ou à la baisse à tout moment depuis les paramètres de votre compte. Les changements de facturation seront calculés au prorata.
                       </div>
                   </div>
               </div>
+              <!-- BLOC QUESTION 2  -->
               <div class="accordion-item border-0 mb-2">
                   <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed fw-semibold rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Y a-t-il une période d'engagement minimale ?
                       </button>
                   </h2>
+                  <!-- Panneau de réponse de la question 2 -->
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                       <div class="accordion-body text-muted">
                             Non. Nos abonnements mensuels sont sans engagement de durée. Vous êtes libre de résilier votre abonnement quand vous le souhaitez, et il prendra fin à l'issue de la période mensuelle en cours.
                       </div>
                   </div>
               </div>
+              <!-- BLOC QUESTION 3 -->
               <div class="accordion-item border-0 mb-2">
                   <h2 class="accordion-header" id="headingThree">
                       <button class="accordion-button collapsed fw-semibold rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Quels sont les moyens de paiement acceptés ?
                       </button>
                   </h2>
+                  <!-- Panneau de réponse de la question 3 -->
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                       <div class="accordion-body text-muted">
                             Nous acceptons toutes les principales cartes bancaires (Visa, MasterCard, American Express) ainsi que les paiements via PayPal. Pour le plan Entreprise, nous prenons également en charge les virements bancaires.
                       </div>
                   </div>
-  </div>
-  <footer class="bg-info text-white pt-5 pb-3 shadow-lg mt-5 py-4 container-fluid">
+          </div>
+          <!-- PIED DE PAGE GLOBALE (Footer avec fond bleu info et ombrage) -->
+          <footer class="bg-info text-white pt-5 pb-3 shadow-lg mt-5 py-4 container-fluid">
       <div class="container">
+        <!-- Rangée principale découpée en 4 colonnes responsives  -->
         <div class="row">
+          <!-- Colonne 1 : Présentation rapide de la marque -->
           <div class="col-md-3 mb-3">
             <img src="" alt="logo AF" class="mb-2">
             <h5>AfriTalent</h5>
             <p class="text-muted text-white">la technologie n'est pas une fin en soi,mais un levier strategique</p>
           </div>
+          <!-- Colonne 2 : Liens de navigation internes du site -->
           <div class="col-md-3 mb-3">
             <h4>les liens</h4>
             <ul class="list-unstyled">
@@ -194,6 +215,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
               <li><a href="" class="text-decoration-none">a propos</a></li>
             </ul>
           </div>
+          <!-- Colonne 3 : Liens d'aide et ressources externes -->
           <div class="col-md-3 mb-3">
             <h4>ressources</h4>
             <ul class="list-unstyled">
@@ -201,6 +223,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
               <li><a href="" class="text-decoration-none">documentation</a></li>
             </ul>
           </div>
+          <!-- Colonne 4 : Coordonnées de contact et réseaux sociaux -->
           <div class="col-md-3 mb-3">
             <h4>Contact</h4>
             <p class="text-muted text-white"><a href="">Email:afritalent@gmail.com</a></p>
@@ -212,14 +235,15 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           </div>
         </div>
         <hr>
+        <!-- Zone de texte centrée affichant le copyright  -->
         <div class="text-center">
           <p class="mb-0"><span id="year"></span>reservation</p>
         </div>
       </div>
     </footer>
-</section>
-  
 </div>
+</section>
+<!-- BOUTON SÉCURISÉ EN POSITION FIXE : Permet à l'utilisateur de remonter en haut de page de manière fluide (Géré via js/main.js) -->
 <button type="button" class="btn btn-info text-dark rounded-circle shadow position-fixed bottom-0 end-0 m-4 d-none" id="btnBackToTop" style="z-index: 1030; width: 50px; height: 50px;">
   <i class="bi bi-arrow-up-short fs-4"></i>
 </button>

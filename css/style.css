@@ -1,4 +1,4 @@
-
+ /* 1. Réinitialisation & Variables Globales */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -11,12 +11,13 @@ html,body {
     font-family: 'Courier New', Courier, monospace;
     color: rgb(47, 7, 190);
     overflow-x: hidden;
-    
+    /* 2. Typographie & Éléments Génériques */
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(10, 43, 70);
 }
+/* 3. Composants : Navigation */
 .navbar{
     background-color: white;
     padding: 0;
@@ -59,6 +60,7 @@ h1,h2,h3{
 .bi-star-fill{
     color: #ffc107;
 }
+/* 4. Section : Hero */
 .hero{
     padding: 80px 0;
     
@@ -147,6 +149,7 @@ h1,h2,h3{
     font-size: larger;
     background: #87a1dc;
 }
+/* 5. Composants : Bento Grid */
 .bento-grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -200,6 +203,7 @@ h1,h2,h3{
     flex: 1;
   }
 }
+/* 6. Composants : Service Cards */
 .service-card {
   transition: transform 0.4s (0.165, 0.84, 0.44, 1), 
               box-shadow 0.4s r(0.165, 0.84, 0.44, 1), 
@@ -245,6 +249,9 @@ h1,h2,h3{
     }
   }
 }
+ /* 7. Media Queries & Adaptabilité (Responsive) */
+
+/* Écrans Mobiles (jusqu'à 767px) */
 @media (max-width: 767px) {
   .col-12 {
     flex: 0 0 100% ;
@@ -262,6 +269,7 @@ h1,h2,h3{
     margin-top: 10px;
   }
 }
+/* Écrans Tablettes (de 768px à 991px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .col-md-6 {
     flex: 0 0 50% ;
@@ -276,6 +284,7 @@ h1,h2,h3{
     grid-column: span 2 ;
   }
 }
+/* Écrans Moyens / Grands (à partir de 992px) */
 @media (min-width: 1200px) {
   .col-lg-4 {
     flex: 0 0 33.333333% ;

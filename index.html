@@ -29,9 +29,11 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top shadow-sm custom-navbar ">
   <div class="container-fluid">
     <a class="navbar-brand text-dark" href="#">AfriTalent</a>
+    <!-- Bouton burger : Synchronisé sur l'identifiant global #navbarMenu pour mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+     <!-- Conteneur regroupant l'ensemble des liens de navigation -->
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -50,27 +52,26 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         <li class="nav-item">
           <a class="nav-link text-dark" href="contact.html">Contact</a>
         </li>
-        
+        <!-- Interrupteur d'action permettant de basculer en mode sombre -->
         <li class="nav-item mx-2">
             <button class="btn btn-link text-dark p-2 text-decoration-none" id="themeToggle" aria-label="Changer de thème">
               <i class="bi bi-moon-fill" id="themeIcon"></i>
           </button>
         </li>
-
+        <!-- Bouton d'appel à l'action (CTA) principal de la barre de navigation -->
         <li class="nav-item ms-lg-2">
           <a class="btn btn-dark rounded-pill shadow-sm px-3" href="#rejoindre">Rejoindre AfriTalent</a>
         </li>
-
-
-
       </ul>
     </div>
   </div>
 </nav>
-
+<!-- CONSTRUCTEUR DU CONTENU PRINCIPAL -->
 <main>
+  <!-- SECTION 1 : HERO (Introduction de la page d'accueil) -->
     <section class="hero py-5">
           <div class="container hero-container">
+            <!-- Zone textuelle d'accroche -->
             <div class="hero-content">
               <h1 class="titre">Trouver L'Experts ideal. <br> Propulsez vos Projets. </h1>
               <h2 class="explique">La Plateforme Collaborative Qui Connecte <br> Toujours Les Meilleure Entreprises</h2>
@@ -79,33 +80,39 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
                 <button class="btn btn-info">Je cherche un Freelance</button>
               </div>
             </div>
+            
             <div><img src="image/acceuil.jpg" class="w-100" alt=""></div>
           </div>
     </section>
+    <!-- SECTION 2 : STATISTIQUES (Avec compteurs dynamiques activés au scroll) -->
     <section class="container py-5 text-center fade-in-section">
       <h1>STATISTIQUE</h1>
         <div class="row">
+          <!-- Bloc Chiffre 1 -->
           <div class="col-md-4">
             <h3 class="border bg-light">freelances inscrits</h3>
             <p class="fs-2 fw-bold m-0 text-info stat-counter" data-target="167">0</p>
           </div>
+          <!-- Bloc Chiffre 2 -->
           <div class="col-md-4">
             <h3 class="border bg-light">entreprises Partenarias</h3>
             <p class="fs-2 fw-bold m-0 text-info stat-counter" data-target="47">0</p>
           </div>
+          <!-- Bloc Chiffre 3 -->
           <div class="col-md-4">
             <h3 class="border bg-light">missions réalisées</h3>
             <p class="fs-2 fw-bold m-0 text-info stat-counter" data-target="123">0</p>
           </div>
         </div>
     </section>
-    </section>
+    <!-- SECTION 3 : COMMENT ÇA MARCHE (Grille Bento réactive) -->
     <section class="container py-5 text-center fade-in-section">
       <div class="container">
         <h1>COMMENT ÇA MARCHE</h1>
       <p>Découvrez notre processus en detaille</p>
       </div >
       <div class="bento-grid">
+        <!-- Étape 1 -->
         <div class="bento-item">
           <div class="bento-text-block">
             <span class="badge bg-primary text-white rounded-pill px-3 py-2">Etape 01</span>
@@ -114,6 +121,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <div class="bento-img-block"><img src="image/rechargement.jpg" class="w-25 rounded-circle" alt=""></div>
           </div>
         </div>
+        <!-- Étape 2 -->
         <div class="bento-item">
           <div class="bento-text-block">
             <span class="badge bg-primary text-white rounded-pill px-3 py-2">Etape 02</span>
@@ -122,6 +130,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <div class="bento-img-block"><img src="image/verification.jpg" class="w-25 rounded-circle" alt=""></div>
           </div>
         </div>
+        <!-- Étape 3 -->
         <div class="bento-item">
           <div class="bento-text-block">
             <span class="badge bg-primary text-white rounded-pill px-3 py-2">Etape 03</span>
@@ -132,9 +141,11 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         </div>
       </div>
     </section>
+    <!-- SECTION 4 : CATÉGORIES DE SERVICES (Grille de cartes d'expertises) -->
     <section class="container text-center fade-in-section">
       <h1> CATÉGORIES DE SERVICES</h1>
       <div class="row row-cols-3 g-3">
+         <!-- Carte 1 : Dév Web -->
         <div class="col">
           <div class="card h-100 p-4 Service-card">
             <h3 class="p-3  bg-white">Developpement Web</h3>
@@ -142,6 +153,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <P>Le développement web consiste à écrire du code informatique pour donner vie à des projets en ligne, allant du simple blog à des plateformes complexe</P>
           </div>
         </div>
+        <!-- Carte 2 : Dessin -->
         <div class="col">
           <div class="card h-100 p-4 Service-card">
             <h3 class="p-3  bg-white">Dessin</h3>
@@ -149,6 +161,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <P>Le dessin numérique consiste à utiliser un logiciel graphique sur ordinateur . Un stylet ou le doigt sur un écran tactile, un pavé tactile ou, plus rarement, une souris, sont des méthodes courantes pour dessiner numériquement</P>
           </div>
         </div>
+        <!-- Carte 3 : Marketing -->
         <div class="col">
           <div class="card h-100 p-4 Service-card">
             <h3 class="p-3  bg-white"> Marketing Digital</h3>
@@ -156,6 +169,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <P>Le marketing digital regroupe l'ensemble des techniques marketing utilisées sur les canaux digitaux.Son but est de promouvoir une marque, d'attirer des clients et de générer des ventes grâce à des stratégies ciblées et mesurables</P>
           </div>
         </div>
+        <!-- Carte 4 : data ia -->
         <div class="col">
           <div class="card h-100 p-4 Service-card">
             <h3 class="p-3  bg-white"> Data & IA</h3>
@@ -163,6 +177,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <P>L'écosystème Data et Intelligence Artificielle (IA) regroupe les technologies, formations et expertises visant à collecter, analyser et transformer les données en valeur stratégique, notamment grâce aux modèles d'apprentissage automatique.</P>
           </div>
         </div>
+        <!-- Carte 5 : redaction Tech -->
         <div class="col">
           <div class="card h-100 p-4 Service-card">
             <h3 class="p-3  bg-white">Rédaction Tech</h3>
@@ -170,6 +185,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <P>La rédaction tech (ou rédaction technique) est une communication factuelle qui simplifie des sujets complexes pour les rendre accessibles. Elle se concentre sur l'utilisateur final et produit des documents utilitaires tels que des manuels d'utilisation, des guides de dépannage ou des documentations logicielles</P>
           </div>
         </div>
+        <!-- Carte 6 : dev clou -->
         <div class="col">
           <div class="card h-100 p-4 Service-card">
             <h3 class="p-3  bg-white">DevOps & Cloud</h3>
@@ -179,9 +195,12 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         </div>
       </div>
     </section>
+    <!-- TÉMOIGNAGES CLIENTS & FREELANCES -->
     <h1 class="text-center">TÉMOIGNAGES</h1>
+    <!-- Composant Carrousel Bootstrap : Défilement automatique des avis avec ombrage doux -->
     <div id="testimonialCarousel" class="carousel slide shadow-sm rounded bg-light p-4 p-md-5" data-bs-ride="carousel" >
       <div class="carousel-inner">
+        <!-- Premier témoignage -->
         <div class="carousel-item active text-center">
           <img src="image/demba ka.jpg" class="w-25 rounded-circle" alt="" >
           <h3 class="mb-3 border bg-light">demba ka</h3>
@@ -189,6 +208,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           <blockquote>
             <p>«Trouver des profils tech qualifiés en Afrique de l'Ouest était un défi.Afritalant est tojours le meilleurs»</p>
           </blockquote>
+          <!-- Système de notation par étoiles vectorielles (Bootstrap Icons) -->
           <p>
             <i class="bi bi-star-fill"></i>
             <i class="bi bi-star-fill"></i>
@@ -197,7 +217,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <i class="bi bi-star-fill"></i>
           </p>
         </div>
-      
+        <!-- Deuxième témoignage -->
         <div class="carousel-item text-center">
           <img src="image/fatimatou.jpg" class="w-25 rounded-circle" alt="" >
           <h3 class="mb-3 border bg-light">Ftima Konate</h3>
@@ -205,6 +225,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           <blockquote>
             <p> «Grâce à AfriTalent, j'ai décroché mes premiers contrats internationaux tout en restant basée à Dakar» </p>
           </blockquote>
+          <!-- Système de notation par étoiles vectorielles (Bootstrap Icons) -->
           <p>
             <i class="bi bi-star-fill"></i>
             <i class="bi bi-star-fill"></i>
@@ -213,6 +234,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             <i class="bi bi-star-fill"></i>
           </p>
         </div> 
+        <!-- Troisième témoignage -->
         <div class="carousel-item text-center">
           <img src="image/salimata.jpg" alt="" class="w-25 rounded-circle">
           <h3 class="mb-3 border bg-light">Salimata Diouf</h3>
@@ -220,6 +242,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           <blockquote>
             <p>«Avec Afritalant,Je recommande vivement à tous les créatifs du continent!»</p>
           </blockquote>
+          <!-- Système de notation par étoiles vectorielles (Bootstrap Icons) -->
           <p>
             <i class="bi bi-star-fill"></i>
             <i class="bi bi-star-fill"></i>
@@ -229,20 +252,22 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           </p>
         </div>
       </div>
-  
-   
+      <!-- Bouton d'action de contrôle : Diapositive précédente -->
       <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
         <span class="visually-hidden">precedent</span>
       </button>
+      <!-- Bouton d'action de contrôle : Diapositive suivante -->
       <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
         <span class="visually-hidden">suivant</span>
       </button>
     </div>
+    <!-- BANNIÈRE D'APPEL À L'ACTION (CTA FINAL) -->
     <div class="row justify-content-center">
       <div class="col-md-8 col-lg-6">
         <h2 class="display-5 fw-bold mb-3">PRET A PROPULSER VOTRE AVENIR OU RECRUTER L'EXCELLENCE ?</h2>
+        <!-- Boutons d'action principaux ajustés avec des classes Bootstrap robustes -->
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <a href="#inscription" class="btn btn-outline-primary btn-lg px-4 me-sm-3 fw-bold">Créer mon compte</a>
           <a href="#savoir-plus" class="btn btn-outline-primary btn-lg px-4 me-sm-3 fw-bold">En savoir plus</a>
@@ -250,15 +275,17 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
       </div>
     </div>
 </div>
-
+  <!-- PIED DE PAGE GLOBAL (Footer avec fond bleu info) -->
     <footer class="bg-info text-white pt-5 pb-3 shadow-lg">
       <div class="container">
         <div class="row">
+          <!-- Colonne 1 : Présentation de l'entreprise -->
           <div class="col-md-3 mb-3">
             <img src="" alt="logo AF" class="mb-2">
             <h5>AfriTalent</h5>
             <p class="text-muted text-white">la technologie n'est pas une fin en soi,mais un levier strategique</p>
           </div>
+          <!-- Colonne 2 : Navigation rapide -->
           <div class="col-md-3 mb-3">
             <h4>les liens</h4>
             <ul class="list-unstyled">
@@ -266,6 +293,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
               <li><a href="" class="text-decoration-none">a propos</a></li>
             </ul>
           </div>
+          <!-- Colonne 3 : Documentation et Blog -->
           <div class="col-md-3 mb-3">
             <h4>ressources</h4>
             <ul class="list-unstyled">
@@ -273,6 +301,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
               <li><a href="" class="text-decoration-none">documentation</a></li>
             </ul>
           </div>
+           <!-- Colonne 4 : Support et Réseaux sociaux -->
           <div class="col-md-3 mb-3">
             <h4>Contact</h4>
             <p class="text-muted text-white"><a href="">Email:afritalent@gmail.com</a></p>
@@ -283,6 +312,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             </div>
           </div>
         </div>
+        <!-- Ligne de séparation interne du footer -->
         <hr>
         <div class="text-center">
           <p class="mb-0"><span id="year"></span>reservation</p>
@@ -290,6 +320,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
       </div>
     </footer>
 </main>
+<!-- BOUTON FLOTTANT RETOUR EN HAUT (Positionnement fixe géré par le script principal) -->
 <button type="button" class="btn btn-info text-dark rounded-circle shadow position-fixed bottom-0 end-0 m-4 d-none" id="btnBackToTop" style="z-index: 1030; width: 50px; height: 50px;">
   <i class="bi bi-arrow-up-short fs-4"></i>
 </button>
