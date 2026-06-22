@@ -22,13 +22,15 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 <link rel="stylesheet" 
    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <link rel="stylesheet" href="https://cloudflare.com">
-
+<!-- Navbar fixe en haut (fixed-top) avec un fond bleu ciel (bg-info) et une ombre légère (shadow-sm) -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand text-dark" href="#">AfriTalent</a>
+    <!-- Bouton Menu Hamburger : Visible uniquement sur les écrans mobiles -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+     <!-- Conteneur des liens de navigation (se replie sur mobile grâce à la classe collapse) -->
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -47,12 +49,13 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
         <li class="nav-item">
           <a class="nav-link text-dark" href="contact.html">Contact</a>
         </li>
+        <!-- Interrupteur Thème : Bouton lune utilisé par le script JS pour basculer en Dark Mode -->
         <li class="nav-item mx-2">
             <button class="btn btn-link text-dark p-2 text-decoration-none" id="themeToggle" aria-label="Changer de thème">
               <i class="bi bi-moon-fill" id="themeIcon"></i>
           </button>
         </li>
-
+        <!-- Bouton d'appel à l'action principal -->
         <li class="nav-item ms-lg-2">
           <a class="btn btn-dark rounded-pill shadow-sm px-3" href="#rejoindre">Rejoindre AfriTalent</a>
         </li>
@@ -62,20 +65,26 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 </nav>
 
 
-
+<!-- CONTENU PRINCIPAL DE LA PAGE  -->
+ <!-- Structure en 2 colonnes (Texte à gauche / Image à droite) qui se superposent sur mobile -->
 <section class="Histoire pt-5 row align-items-center g-5">
         <h2 class="section-title text-center border-primary border-bottom border-2 ms-auto">Notre Histoire</h2>
         <div class="history-container row align-items-center g-4">
+             <!-- Colonne de gauche : Blocs de textes descriptifs -->
             <div class="history-text col-md-6">
                 <p>Fondée avec la volonté de bousculer les codes établis, notre aventure a commencé dans un petit garage numérique. Jour après jour, nous avons repoussé les limites technologiques pour transformer des idées complexes en outils simples et accessibles au quotidien.</p>
                 <p>Aujourd'hui, notre passion reste inchangée : concevoir l'avenir main dans la main avec nos utilisateurs, tout en gardant l'humain au centre de chaque ligne de code que nous écrivons.</p>
             </div >
+            <!-- Colonne de droite : Illustration ou photo d'équipe -->
             <div class="col-md-6"><img class=" rounded shadow-sm w-50 " src="image/reuinion.jpg"  alt="Réunion de l'équipe"></div>
         </div>
     </section>
+    <!-- SOUS-SECTION : L'ÉQUIPE -->
+      <!-- Grille adaptative de 4 cartes présentant les membres fondateurs de la plateforme -->
     <section id="equipe fade-in-section">
         <h2 class="titre text-center mb-5">Equipe</h2>
         <div class="team-grid">
+           <!-- Carte Membre 1 : Sophia -->
             <div class="card h-100 text-center border-0 shadow-sm p-4">
                 <img src="image/sophie.jpg" class="rounded-circle mx-auto mb-3 w-25" alt="">
                 <h3 class="h5 card-title mb-3">Sophia</h3>
@@ -86,6 +95,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
                 </div>
             </div>
         </div>
+        <!-- Carte Membre 2 : Marc -->
         <div class="card h-100 text-center border-0 shadow-sm p-4">
             <div class="team-card">
                 <img src="image/marc.jpg" class="rounded-circle mx-auto mb-3 w-25" alt="">
@@ -96,7 +106,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
                     <a href="#" aria-label="dribbble"><i class="fab fa-dribbble"></i></a>
                 </div>
             </div>
-        </div>
+        </div>\
+        <!-- Carte Membre 3 : Ousmane -->
         <div class="card h-100 text-center border-0 shadow-sm p-4">
             <div class="team-card">
                 <img src="image/ousmane.jpg" class="rounded-circle mx-auto mb-3 w-25" alt="">
@@ -108,6 +119,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
                 </div>
             </div>
         </div>
+        <!-- Carte Membre 4 : Fama -->
         <div class="card h-100 text-center border-0 shadow-sm p-4">
             <div class="team-card">
                 <img src="image/fama.jpg" class="rounded-circle mx-auto mb-3 w-25" alt="">
@@ -120,24 +132,29 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             </div>
         </div>
     </section>
+    <!-- SOUS-SECTION : NOS VALEURS -->
     <section id="valeur">
         <h2 class="tille text-center mb-5">Nos Valeurs</h2>
         <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <!-- BLOC VALEUR 1 : Innovation -->
             <div class="value-card">
                 <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
                 <h3 class="h5 card-title mb-3">Innovation</h3>
                 <p class="card-text text-muted">Anticiper les besoins futurs et créer des solutions simples et uniques</p>
             </div>
+            <!-- BLOC VALEUR 2 : Accessibilité -->
             <div class="card h-100 text-center border-0 shadow-sm p-4">
                 <div class="value-icon"><i class="fas fa-universal-access"></i></div>
                 <h3 class="h5 card-title mb-3">Accessibilité</h3>
                 <p class="card-text text-muted">Rendre nos technologies intuitives et utilisables par tout le monde.</p>
             </div>
+            <!-- BLOC VALEUR 3 : Communauté -->
              <div class="card h-100 text-center border-0 shadow-sm p-4">
                 <div class="value-icon"><i class="fas fa-users"></i></div>
                 <h3 class="class card-title mb-3">Communauté</h3>
                 <p class="card-text text-muted">Grandir ensemble en écoutant et valorisant les retours utilisateurs.</p>
             </div>
+            <!-- BLOC VALEUR 4 : Excellence -->
             <div class="card h-100 text-center border-0 shadow-sm p-4">
                 <div class="value-icon"><i class="fas fa-star"></i></div>
                 <h3 class="h5 card-title mb-3">Excellence</h3>
@@ -145,24 +162,29 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             </div>
         </div>
     </section>
+    <!-- SECTION : CHIFFRES CLÉS (CHIFFRE) -->
     <section id="chiffre">
         <h2 class="text-center mb-5 position-relative pb-3 ">Chiffres Clés</h2>
         
         <div class="bento-grid">
+          <!-- COMPTEUR 1 : Clients -->
             <div class="bento-item card border-0 bg-white p-4 d-flex flex-column justify-content-center shadow-sm">
               <div class="counter-label">clients Satisfait</div>
               <p class="fs-1 fw-bold mb-1 stat-counter" data-target="98">0</p>
             </div>
+            <!-- COMPTEUR 2 : Projets -->
             <div class="bento-item card border-0 bg-white p-4 d-flex flex-column justify-content-center shadow-sm">
               <div class="counter-label">fin de projets</div>
               <p class="fs-1 fw-bold mb-1 stat-counter" data-target="150">0</p>
             </div>
+            <!-- COMPTEUR 3 : Prix Remportés -->
             <div class="bento-item tall card border-0 p-4 d-flex flex-column justify-content-center shadow-sm" style="background-color: #eff6ff;">
               <div class="text-uppercase fw-semibold text-muted tracking-wider small">Prix Gagnés</div>
               <p class="fs-1 fw-bold mb-1 stat-counter" data-target="25">0</p>
             </div>
         </div>
     </section>
+    <!-- COMPOSANT : PIED DE PAGE (FOOTER) -->
         <footer class="bg-info text-white pt-5 pb-3 shadow-lg">
       <div class="container">
         <div class="row">
